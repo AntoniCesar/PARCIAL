@@ -5,8 +5,11 @@ date: "24/7/2021"
 output: github_document
 ---
 
-### PREGUNTA 1.1
+```{r message=FALSE, warning=FALSE}
+library(tidyverse)
+```
 
+### PREGUNTA 1.1
 ```{r}
 r <- NULL; y <- NULL
 a <- c(1000,1500,2000,2500,3000)
@@ -28,10 +31,18 @@ Solución <- solve(T.D,T.I)
 names(Solución) <- c("x","y","z")
 Solución
 ```
+
 ### PREGUNTA 2.1
 
+
 ```{r}
-clima <- read_csv("D://PARCIAL/clima.csv")
+library(readr)
+clima <- read_csv("clima.csv")
 View(clima)
 ```
 
+### PREGUNTA 3.1
+```{r}
+data1 <- read.csv("temperatureDataset.csv")
+names(data1)
+```
